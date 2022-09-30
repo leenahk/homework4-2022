@@ -134,18 +134,13 @@ li:hover{
 .container{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  row-gap: 15px;
-
+  grid-gap: 15px;
 }
 /* Step 5: Write selector/rule property to add the background image to the 
 first div in the grid and place it in the grid. */
 div:first-child{
-  grid-column: 1 / span 5;
+  grid-column: 1 / -1;
   background-image: url("../images/header.jpg");
-  background-attachment: fixed; /* Parallax effect */     
-  background-position: center;  /* Parallax effect */
-  background-repeat: no-repeat; /* Parallax effect */
-  background-size: cover;       /* Parallax effect */
 
 }
 
@@ -177,15 +172,12 @@ div.contact, div.contact-image{
 }
 
 div.about-image, div.method-image, div.clients-image, div.contact-image{
-  grid-column: 1 / span 3;
+  grid-column: 1 / -1;
   max-height: 600px;
-
-  
 }
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
 .text-block{
-  justify-content: center;
   align-self: center;
 
 }
@@ -218,8 +210,6 @@ div.about-image, div.method-image, div.clients-image, div.contact-image{
  /* Step 13:Write the selector/rule property to update the .text-block class */
  .text-block{
   max-height: 250px;
-  justify-content: center;
-
  }
 
 }

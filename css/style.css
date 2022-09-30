@@ -158,23 +158,30 @@ div.about, div.method, div.clients, div.contact{
 }
 div.about, div.about-image{
   grid-row-start: 2;
+  overflow: hidden;
+
 }
 div.method, div.method-image{
   grid-row-start: 3;
+  overflow: hidden;
 }
 div.clients, div.clients-image{
   grid-row-start: 4;
+  overflow: hidden;
+
 }
 div.contact, div.contact-image{
   grid-row-start: 5;
+  overflow: hidden;
+
 }
 
 div.about-image, div.method-image, div.clients-image, div.contact-image{
   grid-column: 1 / span 3;
   max-height: 600px;
-  overflow: hidden;
-}
 
+  
+}
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
 .text-block{
